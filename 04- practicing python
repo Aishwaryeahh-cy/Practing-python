@@ -1,0 +1,36 @@
+nums=[1,2,3,4,5]
+total=0
+for i in nums:
+    total=total + i
+    print(total)
+def solve(nums):
+    total=0
+    for num in nums:
+        total =total+num
+    return total
+print(solve([1,2,3,4,5]))
+def solve(nums):
+    total=0
+    for num in nums:
+        total=total+num
+    return total
+print(solve([1,2,3,4,5]))
+def solve (mans):
+    total = 0
+    for man in mans:
+        total=total+man
+    return total
+print(solve([1,2,3,4,5]))
+def solve(numb):
+    total=0
+    for num in numb:
+        total=total+num
+    return total
+print(solve([10,20,30]))
+
+
+
+
+
+
+
