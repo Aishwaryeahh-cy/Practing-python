@@ -1,0 +1,288 @@
+# nums=[1,2,3,4,5]
+# total=0
+# for i in nums:
+#     total=total + i
+#     print(total)
+# def solve(nums):
+#     total=0
+#     for num in nums:
+#         total =total+num
+#     return total
+# print(solve([1,2,3,4,5]))
+# def solve(nums):
+#     total=0
+#     for num in nums:
+#         total=total+num
+#     return total
+# print(solve([1,2,3,4,5]))
+def solve (mans):
+    total = 0
+    for man in mans:
+        total=total+man
+    return total
+print(solve([1,2,3,4,5]))
+def solve(numb):
+    total=0
+    for num in numb:
+        total=total+num
+    return total
+print(solve([10,20,30]))
+def solve(numer):
+    val=0
+    for num in numer:
+        val=val+num
+    return val
+print(solve([1,2,3,3,4]))
+
+def solve(ai):
+    new=[]
+    for n in ai:
+        if n < 5:
+            new.append(n)
+    return new
+print(solve([3,5,6,77,3]))
+
+def solve(nq):
+    q=[]
+    for f in nq:
+        if f < 5:
+            q.append(f)
+    return q
+print(solve([22,33,44,5,6,2]))
+
+def solve(equal):
+    p=[]
+    for m in equal:
+        if m == 3:
+            p.add(m)
+    return p
+print(solve([[3, 1, 3, 5]]))
+    
+📊 PHASE 1 — FUNDAMENTALS (MOST IMPORTANT)
+🔹 1. LISTS (ARRAYS)
+
+Sub-concepts:
+
+Indexing (nums[0])
+Traversal (for num in nums)
+Append (nums.append())
+Length (len(nums))
+
+Indexing in Lists
+def solve(num):
+    return num[0]
+
+print(solve([8, 3, 5]))
+
+def solve(nums):
+    return nums[0]
+
+
+print(solve([5, 10, 15]))
+
+def solve(nwq):
+    return nwq[2]
+print(solve([10, 20, 30, 40]))
+
+def solve(b):
+    return len(b) - 1
+print (solve([[1, 2, 3, 4]])) 
+
+def solve(b):
+    return len(b) -1 + (b[0])
+print (solve([[1, 2, 3, 4]])) 
+
+def solve(second):
+    return second[1]
+print (solve([9, 4, 7]))
+
+def solve(second):
+    return second[len(second) - 1]
+print (solve([5, 1, 8, 3]))
+
+def solve(second):
+    return second[len(second) - 2]
+print (solve([2, 6, 9, 11]))
+
+def solve(second):
+    return second[0] + second[len(second) - 1]
+print (solve([10, 20, 30]))
+
+def solve(second):
+    return second [len(second) // 2]
+print (solve([3, 6, 9, 12, 15]))
+
+def solve(second):
+    return second[0] + second[1] + second[len(second)- 1]
+print (solve([4, 5, 6, 7]))
+def solve(num):
+    res = []
+    for n in num:
+        res.append(n)
+    return res
+print(solve([2, 4, 6]))   
+
+def solve(new):
+    b=[]
+    for n in new:
+        b.append(n*2)
+    return b
+print(solve([1, 2, 3]))
+
+def solve(m):
+    f=[]
+    for b in m:
+        if  b>=2:
+            f.append(b)
+    return f
+print(solve([3, 4]))
+
+def solve(a):
+    r=[]
+    for n in a:
+        if n%2==0:
+            n.append(r)
+        return n
+print(solve([1, 2, 3, 4, 6]))
+
+def sum(tot):
+    t=[]
+    for n in tot:
+        n=n+tot
+    return n
+print(solve([1, 2, 3, 4]))
+
+
+def solve(a):
+    r=[]
+    for n in a:
+        if n>r:
+            n.append(r)
+        return n
+print(solve([1, 2, 3, 4, 6]))
+
+def solve(odd):
+    q=0
+    for n in odd:
+        if n % 2 !=0:
+            q+=1
+    return q
+print(solve([1, 2, 3, 4, 5]))
+
+def solve(eve):
+    total=0
+    for s in eve:
+        if s % 2==0:
+            total += s 
+    return total
+print(solve([1, 2, 3, 4, 6]))
+
+def solve(min):
+    c=min[0]
+    for m in min:
+        if m<c:
+            c=m
+    return c
+print(solve([5, 2, 8, 1, 9]))
+
+def solve(div):
+    s=[]
+    for n in div:
+        if n%3==0:
+            s.append(n)
+    return s
+print(solve([1, 3, 6, 8, 9]))
+
+def solve(div):
+    s=0
+    for n in div:
+        if n > 5:
+            s+=1
+    return s
+print(solve([2, 7, 1, 9, 4]))
+
+def solve(re):
+    v=[]
+    for n in re:
+        return v[0] + v[v(-1)]
+print(solve([2, 4, 6, 8]))
+
+def solve(g):
+    c=0
+    for n in g:
+        if n >3:
+            c+=1
+    return c
+print(solve([1, 4, 2, 5, 3]))
+
+def solve(g):
+    c=0
+    for n in g:
+        if n %2==0:
+            c+=n
+    return c
+print(solve([1, 4, 2, 5, 3]))
+
+def solve(m):
+    max=m[0]
+    for n in m:
+        if n>max:
+            max=n
+    return max
+print(solve([3, 1, 7, 2, 9]))
+
+def solve(g):
+    c=0
+    for n in g:
+        if n %2==0 and n > 2:
+            c.append(n)
+#     return c 
+# print(solve([1, 4, 2, 5, 3]))
+
+def solve(b):
+    c=0
+    for i in b:
+        if i > 3:
+            c +=1
+    return c
+print(solve([1,3,4,66,55]))
+
+def solve(n):
+    s=[]
+    for d in s:
+        if d % 2==0:
+            d=s
+    return s
+print(solve([1,3,4,66,55]))
+
+def solve(b):
+    c=0
+    for i in b:
+        if i > 2:
+            c +=1
+    return c
+print(solve([1,3,4,66,55]))
+
+nums = [2, 4, 6]
+for i in range(len(nums)):
+#     print(i,nums[i])
+
+num=[6,7,8,9]
+for i in range(len(num)):
+    if num[i] > 3:
+print(num[i])
+
+num=[5,6,7,8]
+for i in range(len(num)):
+    if i > 0:
+        print(num[i*2])
+
+num=[1,2,3,4,5]
+for i in range(len(num)):
+    if num[i] > 3:
+        print(num[i])
+
+num=[3, 7, 2, 9, 5]
+for i in range(len(num)):
+    if num[i] < 6:
+        print(num[i])
