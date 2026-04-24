@@ -1,0 +1,118 @@
+nums = [2, 9, 1]
+for i in range (len(nums)-1):
+    print(nums[i]+nums[i+1])
+
+def solve(num):
+    count=0
+    for i in num:
+        if i %2==0:
+            count+=1
+    return count
+print(solve([1, 2, 3, 4, 6]))
+
+def solve(sum):
+    re=0
+    for n in sum:
+        if n > 3:
+            re += n
+    return re
+print(solve([1, 4, 2, 5, 3]))
+
+def solve(sol):
+    n=[]
+    if n in sol:
+        if n%2==0 and n >2:
+            n.append(n)
+    return n
+print(solve([1, 2, 3, 4, 6]))
+
+def solve(count):
+    c=0
+    for n in count:
+        if n > 3:
+            count +=n 
+    return count
+print(solve([1, 4, 2, 5, 3]))
+
+
+def solve(count):
+    count=1
+    for n in count:
+        if n%2==0:
+            count +=n 
+    return count
+print(solve([1, 4, 2, 5, 3]))
+
+def solve(n):
+    res=[]
+    for i in n:
+        if i < 4 :
+            res.append(i)
+    return res
+print(solve( [1, 5, 2, 7, 3]))
+
+def solve(m):
+    n=0
+    for b in m:
+        if b <3:
+            n +=1
+    return n
+print(solve([1, 5, 2, 7, 3])) 
+
+
+def solve(nu):
+    c=[]
+    for i in range(len(nu)):
+        if c > 2:
+            c+= i
+
+
+def solve(num):
+    c=0
+    for i in (num):
+        if i%2 ==0 :
+            c += 1
+    return c
+print(solve([3, 6, 1, 8, 5]))
+
+def solve(y):
+    m=0
+    for i in y:
+        if i < 5:
+            m += i
+    return m
+print(solve([2, 7, 3, 9, 4]))
+
+def solve(b):
+    m=[]
+    for i in b:
+        if i >4 :
+           m.append(i)
+    return i 
+print(solve( [1, 5, 2, 6, 3]))
+
+
+def solve(b):
+    c=0
+    for i in b:
+        if i > b[0]:
+            c += 1
+    return c
+print(solve([3, 5, 1, 7, 2]))
+
+def solve(c):
+    e=0
+    for i in range(len(c)):
+        if i %2==0:
+            e +=c[i]
+    return e
+print(solve([3, 5, 1, 7, 2]))
+
+
+def solve(b):
+    m=[]
+    for n in b:
+        if n %2==0 and n<5:
+            m.append(n)
+    return m
+print(solve([1, 2, 3, 4, 6]))
