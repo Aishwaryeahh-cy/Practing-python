@@ -1,0 +1,69 @@
+def solve(num):
+    left=0
+    right=len(num)-1
+    while left < right:
+        num[left],num[right]=num[right],num[left]
+        left +=1
+        right -=1
+    return num
+print(solve([2,4,6,8]))
+
+def solve(num):
+    left=0
+    right=len(num)-1
+    while left < right:
+        if num[left] != num[right]:
+            return False
+        left +=1
+        right -=1
+    return True
+print(solve([1,2,3,2,1]))
+
+def solve(n,r):
+    left=0
+    right=len(n)-1
+    while left < right:
+        s=n[left] + n[right]
+        if s == r:
+            return True
+        elif s < r:
+            left +=1
+        else:
+            right -=1
+    return False
+print(solve([1,2,4,7,9],11))
+
+def solve(n):
+    left=0
+    right=len(n)-1
+    while left <  right:
+        n[left],n[right] = n[right],n[left]
+        left +=1
+        right -=1
+    return n
+print(solve([3,6,9,12]))
+
+def wsolve(n):
+    left =0
+    right=len(n)-1
+    while left < right :
+        if n[left] != n[right]:
+            return False
+        left +=1
+        right -=1
+    return True
+print(solve([4,7,7,4]))
+
+def solve (v,r):
+    left =0
+    right=len(v)-1
+    while left < right:
+        s=v[left] + v[right]
+        if s == v:
+            return True
+        elif s < v:
+            left  +=1
+        else:
+            right -=1
+    return True
+print(solve([9,3,4,5,6]),11)
