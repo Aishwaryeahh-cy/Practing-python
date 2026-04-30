@@ -1,0 +1,121 @@
+def solve(nums):
+    k=2
+    window_sum=nums[0] + nums[1]
+    max_sum=window_sum
+    for i in range(k,len(nums)):
+        window_sum=window_sum-nums[i-k]+nums[i]
+        if window_sum > max_sum:
+            max_sum=window_sum
+    return max_sum
+print(solve([4,2,7,1]))
+
+def solve(p):
+    m=2
+    window=p[0]+p[1]
+    max_win=window
+    for i in range(m,len(p)):
+        window=window- p[i-m]+p[i]
+    return window
+print(solve([2,4,5,6,7,3]))
+
+
+def solve(m):
+    n=3
+    max=m[0] + m[1]
+    num=max
+    for i in range (n,len(m)):
+        max= max - m[i-n] +m[i]
+        if max > num:
+            num= max
+#     return num
+
+def solve(b):
+    v=2
+    max=b[0] + b[1]
+    num=max
+    for i in range(v,len(b)):
+        max=max - b[i-v] + b[i]
+        if num > max:
+            max=num
+    return max
+print(solve( [1,5,2,3,7]))        
+
+
+def solve(b):
+    v=3
+    max=b[0] + b[1]
+    num=max
+    for i in range(b,len(v)):
+        max=max - b[i-v] + b[i]
+        if num > max:
+            max=num
+    return max
+# print(solve( [1,5,2,3,7]))        
+
+def solve(sum):
+    m=3
+    max=sum[0]+sum[1]+sum[2]
+    track=max
+    for i in range(m,len(sum)):
+        max=max - sum[i-m] +sum[i]
+        if max > track:
+            track = max
+    return track
+print(solve([2,1,5,1,3,2]))
+
+def solve(n):
+    v=0
+    for i in n:
+        if i > 3:
+            v += 1
+    return v
+print(solve([3,4,4,5,7,6]))
+
+def solve(num,k):
+    b=[]
+    for i in range(num,k):
+        if 
+
+def solve(n):
+    b=0
+    for i in n:
+        if i %2 == 0 and i >3:
+            b +=1
+    return b
+print(solve([1,4,2,6,3,8]))
+
+def solve(m):
+    left = 0
+    right = len(m)-1
+    for i in m:
+        if m[left] != m[right]:
+            return False
+        left +=1
+        right -=1
+    return True
+print(solve([1,2,4,2,1]))
+
+def solve(c,k):
+    left=0
+    right=len(c)-1
+    for i in range(len[c],k):
+        s= c[left] > c[right]
+        if s > k:
+            return True
+        elif s==k:
+            left +=1
+        else:
+            right -=1
+    return False
+print(solve([1,3,5,7,9],12))
+
+def solve(f):
+    k=3
+    max=f[0] + f[1] +f[2]
+    s=max
+    for i in range (k,len(f)):
+        max=max - f[i-k] + f[i]
+        if max > s:
+            s=max
+    return s
+print(solve([2,4,1,7,5,3]))
