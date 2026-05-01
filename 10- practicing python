@@ -1,0 +1,44 @@
+def solve(num):
+    count=0
+    for i in num:
+        if i %3==0 and i > 4:
+            count +=1
+    return count
+print(solve([2,3,6,9,12,1]))
+
+def solve(n):
+    left=0
+    right=len(n)-1
+    while left < right:
+        if n[left] != n[right]:
+            return False
+        left +=1
+        right -=1
+    return True
+print(solve([1,2,3,2,1]))
+
+def solve(m,l):
+    l=2
+    left=0
+    right=len(m)-1
+    while left < right:
+        s=m[left]+m[right]
+        if s == l:
+            return True
+        elif s<l:
+            left +=1
+        else:
+            right -=1
+    return False
+print(solve([2,4,6,8,10],14))
+
+def solve(v,k):
+    k=3
+    max=v[0]+v[1]+v[2]
+    m=max
+    for i in range(k,len(v)):
+        max=max-v[i-k] +v[i]
+        if max > m:
+            m=max
+    return m
+print(solve([3,5,2,6,1,7],3))
