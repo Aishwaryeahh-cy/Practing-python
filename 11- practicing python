@@ -1,0 +1,52 @@
+def solve(b):
+    c=0
+    for i in b:
+        if i > 3:
+            c+=1
+    return c
+print(solve([1,4,2,5,6]))
+
+def solve(m,k):
+    left=0
+    right=len[m]-1
+    for i in range(m,k):
+        if m[left] != m[right]:
+            return False
+        left=+1
+        right=-1
+    return True
+
+def solve(n,k):
+    max=n[0]+n[1]
+    min=max
+    for i in range(n,k):
+        max=max-n[k]
+
+def solve(m):
+    s=net()
+    for i in m:
+        if i in s:
+            return True
+        s.add(i)
+        return False
+
+def solve(n):
+    num = set()
+    for i in n:
+        if i in num:
+            return True
+        num.add(i)
+    return False
+
+def solve(b):
+    freq={}
+    for i in b:
+        if i in freq:
+            freq[b]+=1
+        else:
+            freq[b]=1
+    return freq
+
+
+
+        
